@@ -3,9 +3,16 @@
 Ready-to-use prompt templates for specific development scenarios and tasks, defining prompt text with a specific mode, model, and available set of tools.
 ### How to Use Reusable Prompts
 
-**To Install:**
-- Click the **VS Code** or **VS Code Insiders** install button for the prompt you want to use
-- Download the `*.prompt.md` file and manually add it to your prompt collection
+**📖 For detailed instructions on adding prompts to your repository, see our [comprehensive guide](USING_IN_YOUR_REPOSITORY.md).**
+
+**Quick Install:**
+- Click the **VS Code**, **VS Code Insiders**, or **Visual Studio** install button for the prompt you want
+- The prompt will be automatically installed to your workspace
+
+**Manual Installation:**
+- Download the `*.prompt.md` file from this repository
+- Add it to the `.github/prompts/` directory in your repository
+- Commit and push the changes
 
 **To Run/Execute:**
 - Use `/prompt-name` in VS Code chat after installation
