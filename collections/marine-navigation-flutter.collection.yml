@@ -1,0 +1,61 @@
+id: marine-navigation-flutter
+name: Marine Navigation App - Flutter/Dart
+description: App-ready Copilot bundle for marine navigation projects using Flutter/Dart. Includes planning workflows, documentation, performance, security, and UX guidance for building production-ready mobile applications.
+tags:
+  [
+    flutter,
+    dart,
+    mobile,
+    marine-navigation,
+    planning,
+    documentation,
+    performance,
+    security,
+    ux,
+    app-development
+  ]
+items:
+  # Planning & Specification Agents
+  - path: agents/implementation-plan.agent.md
+    kind: agent
+    usage: Generate detailed implementation plans from specifications
+  - path: agents/se-technical-writer.agent.md
+    kind: agent
+    usage: Create developer documentation, user guides, and technical content
+
+  # UX & Design Agent
+  - path: agents/se-ux-ui-designer.agent.md
+    kind: agent
+    usage: Jobs-to-be-Done analysis, user journey mapping, and UX research for design workflows
+
+  # Development Instructions
+  - path: instructions/dart-n-flutter.instructions.md
+    kind: instruction
+    usage: Best practices for Dart and Flutter development following official recommendations
+  - path: instructions/spec-driven-workflow-v1.instructions.md
+    kind: instruction
+    usage: Structured approach bridging requirements to implementation with documentation
+  - path: instructions/update-docs-on-code-change.instructions.md
+    kind: instruction
+    usage: Keep documentation synchronized with code changes
+  - path: instructions/performance-optimization.instructions.md
+    kind: instruction
+    usage: Comprehensive performance optimization for frontend, backend, and mobile
+  - path: instructions/security-and-owasp.instructions.md
+    kind: instruction
+    usage: Secure coding based on OWASP Top 10 and industry best practices
+
+  # Planning & Implementation Prompts
+  - path: prompts/create-specification.prompt.md
+    kind: prompt
+    usage: Create new specification files optimized for AI consumption
+  - path: prompts/create-implementation-plan.prompt.md
+    kind: prompt
+    usage: Generate implementation plans for features, refactoring, or upgrades
+  - path: prompts/breakdown-feature-implementation.prompt.md
+    kind: prompt
+    usage: Break down features into detailed implementation plans
+
+display:
+  ordering: alpha
+  show_badge: true
