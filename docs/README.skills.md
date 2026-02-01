@@ -5,6 +5,8 @@ Agent Skills are self-contained folders with instructions and bundled resources 
 Skills differ from other primitives by supporting bundled assets (scripts, code samples, reference data) that agents can utilize when performing specialized tasks.
 ### How to Use Agent Skills
 
+**📖 For detailed instructions on adding skills to your repository, see our [comprehensive guide](USING_IN_YOUR_REPOSITORY.md).**
+
 **What's Included:**
 - Each skill is a folder containing a `SKILL.md` instruction file
 - Skills may include helper scripts, code templates, or reference data
@@ -15,10 +17,16 @@ Skills differ from other primitives by supporting bundled assets (scripts, code 
 - Use skills when you need code templates, helper utilities, or reference data alongside instructions
 - Skills provide progressive disclosure - loaded only when needed for specific tasks
 
+**Installation:**
+- Download the entire skill folder from the [`skills/`](../skills/) directory
+- Add it to the `.github/skills/` directory in your repository
+- Ensure all bundled assets are included
+- Commit and push the changes
+
 **Usage:**
-- Browse the skills table below to find relevant capabilities
-- Copy the skill folder to your local skills directory
-- Reference skills in your prompts or let the agent discover them automatically
+- Copilot will automatically discover skills in your `.github/skills/` directory
+- Skills are loaded on-demand when relevant to your task
+- Reference skills explicitly in your prompts when needed
 
 | Name | Description | Bundled Assets |
 | ---- | ----------- | -------------- |

@@ -55,6 +55,12 @@ To make it easy to add these customizations to your editor, we have created a [M
 
 ## 🔧 How to Use
 
+### Adding Resources to Your Repository
+
+Want to use these agents, prompts, instructions, or skills in your own projects? See our **[comprehensive guide on using Awesome Copilot resources in your repository](docs/USING_IN_YOUR_REPOSITORY.md)**.
+
+**Quick install:** Each resource includes one-click install buttons for VS Code, VS Code Insiders, and Visual Studio. Simply browse the documentation and click the install button!
+
 ### 🤖 Custom Agents
 
 Custom agents can be used in Copilot coding agent (CCA), VS Code, and Copilot CLI (coming soon). For CCA, when assigning an issue to Copilot, select the custom agent from the provided list. In VS Code, you can activate the custom agent in the agents session, alongside built-in agents like Plan and Agent.

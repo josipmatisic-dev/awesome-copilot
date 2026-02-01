@@ -3,19 +3,29 @@
 Custom agents for GitHub Copilot, making it easy for users and organizations to "specialize" their Copilot coding agent (CCA) through simple file-based configuration.
 ### How to Use Custom Agents
 
-**To Install:**
-- Click the **VS Code** or **VS Code Insiders** install button for the agent you want to use
-- Download the `*.agent.md` file and add it to your repository
+**📖 For detailed instructions on adding agents to your repository, see our [comprehensive guide](USING_IN_YOUR_REPOSITORY.md).**
+
+**Quick Install:**
+- Click the **VS Code**, **VS Code Insiders**, or **Visual Studio** install button for the agent you want
+- The agent will be automatically installed to your workspace
+- Start using it immediately in GitHub Copilot Chat or when assigning issues to Copilot
+
+**Manual Installation:**
+- Download the `*.agent.md` file from this repository
+- Add it to the `.github/agents/` directory in your repository
+- Commit and push the changes
+- The agent will be available to everyone on your team
 
 **MCP Server Setup:**
-- Each agent may require one or more MCP servers to function
-- Click the MCP server to view it on the GitHub MCP registry
-- Follow the guide on how to add the MCP server to your repository
+- Some agents require one or more MCP (Model Context Protocol) servers to function
+- Click the MCP server install button to add it to your editor
+- Follow the MCP-specific setup instructions
+- The agent will have access to tools from configured MCP servers
 
-**To Activate/Use:**
-- Access installed agents through the VS Code Chat interface, assign them in CCA, or through Copilot CLI (coming soon)
-- Agents will have access to tools from configured MCP servers
-- Follow agent-specific instructions for optimal usage
+**Using Agents:**
+- **In VS Code/VS Code Insiders:** Type `@` in Copilot Chat and select the agent name
+- **In Copilot Coding Agent (CCA):** When assigning an issue to `@copilot`, select the custom agent from the dropdown
+- **In Copilot CLI:** Coming soon!
 
 | Title | Description | MCP Servers |
 | ----- | ----------- | ----------- |

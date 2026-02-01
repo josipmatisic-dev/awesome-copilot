@@ -13,14 +13,22 @@ Team and project-specific instructions to enhance GitHub Copilot's behavior for 
 
   instructionsUsage: `### How to Use Custom Instructions
 
-**To Install:**
-- Click the **VS Code** or **VS Code Insiders** install button for the instruction you want to use
-- Download the \`*.instructions.md\` file and manually add it to your project's instruction collection
+**📖 For detailed instructions on adding instructions to your repository, see our [comprehensive guide](USING_IN_YOUR_REPOSITORY.md).**
 
-**To Use/Apply:**
-- Copy these instructions to your \`.github/copilot-instructions.md\` file in your workspace
-- Create task-specific \`*.instructions.md\` files in your workspace's \`.github/instructions/\` folder (e.g., \`.github/instructions/my-csharp-rules.instructions.md\`)
-- Instructions automatically apply to Copilot behavior once installed in your workspace`,
+**Quick Install:**
+- Click the **VS Code**, **VS Code Insiders**, or **Visual Studio** install button for the instruction you want
+- The instruction will be automatically installed to your workspace
+
+**Manual Installation:**
+- Download the \`*.instructions.md\` file from this repository
+- Add it to the \`.github/instructions/\` directory in your repository
+- Ensure the frontmatter includes an \`applyTo\` field specifying file patterns
+- Commit and push the changes
+
+**How Instructions Work:**
+- Instructions automatically apply to files matching the \`applyTo\` patterns in their frontmatter
+- Copilot uses these instructions when you work on matching files
+- You can also add instructions to \`.github/copilot-instructions.md\` to apply globally`,
 
   promptsSection: `## 🎯 Reusable Prompts
 
@@ -28,9 +36,16 @@ Ready-to-use prompt templates for specific development scenarios and tasks, defi
 
   promptsUsage: `### How to Use Reusable Prompts
 
-**To Install:**
-- Click the **VS Code** or **VS Code Insiders** install button for the prompt you want to use
-- Download the \`*.prompt.md\` file and manually add it to your prompt collection
+**📖 For detailed instructions on adding prompts to your repository, see our [comprehensive guide](USING_IN_YOUR_REPOSITORY.md).**
+
+**Quick Install:**
+- Click the **VS Code**, **VS Code Insiders**, or **Visual Studio** install button for the prompt you want
+- The prompt will be automatically installed to your workspace
+
+**Manual Installation:**
+- Download the \`*.prompt.md\` file from this repository
+- Add it to the \`.github/prompts/\` directory in your repository
+- Commit and push the changes
 
 **To Run/Execute:**
 - Use \`/prompt-name\` in VS Code chat after installation
@@ -64,19 +79,29 @@ Custom agents for GitHub Copilot, making it easy for users and organizations to 
 
   agentsUsage: `### How to Use Custom Agents
 
-**To Install:**
-- Click the **VS Code** or **VS Code Insiders** install button for the agent you want to use
-- Download the \`*.agent.md\` file and add it to your repository
+**📖 For detailed instructions on adding agents to your repository, see our [comprehensive guide](USING_IN_YOUR_REPOSITORY.md).**
+
+**Quick Install:**
+- Click the **VS Code**, **VS Code Insiders**, or **Visual Studio** install button for the agent you want
+- The agent will be automatically installed to your workspace
+- Start using it immediately in GitHub Copilot Chat or when assigning issues to Copilot
+
+**Manual Installation:**
+- Download the \`*.agent.md\` file from this repository
+- Add it to the \`.github/agents/\` directory in your repository
+- Commit and push the changes
+- The agent will be available to everyone on your team
 
 **MCP Server Setup:**
-- Each agent may require one or more MCP servers to function
-- Click the MCP server to view it on the GitHub MCP registry
-- Follow the guide on how to add the MCP server to your repository
+- Some agents require one or more MCP (Model Context Protocol) servers to function
+- Click the MCP server install button to add it to your editor
+- Follow the MCP-specific setup instructions
+- The agent will have access to tools from configured MCP servers
 
-**To Activate/Use:**
-- Access installed agents through the VS Code Chat interface, assign them in CCA, or through Copilot CLI (coming soon)
-- Agents will have access to tools from configured MCP servers
-- Follow agent-specific instructions for optimal usage`,
+**Using Agents:**
+- **In VS Code/VS Code Insiders:** Type \`@\` in Copilot Chat and select the agent name
+- **In Copilot Coding Agent (CCA):** When assigning an issue to \`@copilot\`, select the custom agent from the dropdown
+- **In Copilot CLI:** Coming soon!`,
 
   skillsSection: `## 🎯 Agent Skills
 
@@ -85,6 +110,8 @@ Agent Skills are self-contained folders with instructions and bundled resources 
 Skills differ from other primitives by supporting bundled assets (scripts, code samples, reference data) that agents can utilize when performing specialized tasks.`,
 
   skillsUsage: `### How to Use Agent Skills
+
+**📖 For detailed instructions on adding skills to your repository, see our [comprehensive guide](USING_IN_YOUR_REPOSITORY.md).**
 
 **What's Included:**
 - Each skill is a folder containing a \`SKILL.md\` instruction file
@@ -96,10 +123,16 @@ Skills differ from other primitives by supporting bundled assets (scripts, code 
 - Use skills when you need code templates, helper utilities, or reference data alongside instructions
 - Skills provide progressive disclosure - loaded only when needed for specific tasks
 
+**Installation:**
+- Download the entire skill folder from the [\`skills/\`](../skills/) directory
+- Add it to the \`.github/skills/\` directory in your repository
+- Ensure all bundled assets are included
+- Commit and push the changes
+
 **Usage:**
-- Browse the skills table below to find relevant capabilities
-- Copy the skill folder to your local skills directory
-- Reference skills in your prompts or let the agent discover them automatically`,
+- Copilot will automatically discover skills in your \`.github/skills/\` directory
+- Skills are loaded on-demand when relevant to your task
+- Reference skills explicitly in your prompts when needed`,
 };
 
 const vscodeInstallImage =
